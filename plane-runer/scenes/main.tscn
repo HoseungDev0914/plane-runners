@@ -91,5 +91,9 @@ position = Vector2(229.25, 51.249996)
 scale = Vector2(0.2832031, 0.2832031)
 texture = ExtResource("3_sugp2")
 
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="FmodBankLoader" type="FmodBankLoader" parent="Node3D"]
+
 [connection signal="player_hit" from="Plane" to="." method="take_damage"]
 [connection signal="player_hit" from="Plane" to="Camera3D" method="camera_shake"]
